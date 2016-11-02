@@ -4,7 +4,8 @@
 #include <cctype> /// 包含cctype库 
 using namespace std;
 
-/// 第一题：引用传递，判断回文 
+/// 第二题：同第一题，但考虑大小写、空格等问题
+/// 测试数据：“Madam,I'm Adam!”应被判断为回文 
 
 bool Palindrome(char * &); 
 
@@ -32,7 +33,7 @@ bool Palindrome(char * &a){
 		a[i] = '\0';
 	}
 	b[j] = '\0';
-	/// 同第一题中方法判断回文（相比第一题，二者相当于调换了一下） 
+	/// 同第一题中方法判断回文（相比第一题，a、b相当于调换了一下） 
 	for(i=0,j--;b[i]!='\0';i++,j--){
 		a[i] = b[j];
 	}	

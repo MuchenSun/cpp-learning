@@ -14,10 +14,10 @@ Person::Person(){ // Ä¬ÈÏ¸³Öµ
     Birth = 0;
 }
 
-Person::Person(char * ii,char * nn,char * gg,int bb){
-    ID.assign(ii);
-    Name.assign(nn);
-    Gender.assign(gg);
+Person::Person(string ii,string nn,string gg,int bb){
+    ID=ii;
+    Name=nn;
+    Gender=gg;
     Birth = bb;
     cout << "information completed.\n";
 }

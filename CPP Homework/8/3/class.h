@@ -8,7 +8,7 @@ using namespace std;
 class Person{
 public:
     Person(); // Ä¬ÈÏ¸³Öµ
-    Person(char *,char *,char *,int);
+    Person(string,string,string,int);
     Person(const Person &);
     void printInf();
     void setInf();
